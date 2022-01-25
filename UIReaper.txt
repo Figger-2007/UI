@@ -809,8 +809,7 @@ function SolarisLib:New(Config)
                 Button.Name = text .. "element"
                 Button.ButtonText.Text = text
                 Button.ClipsDescendants = true
-                Button.BorderColor3 = Color3.fromRGB(255, 35, 50)
-                Button.BorderSizePixel = 1
+                
                 
                 Button.MouseButton1Click:Connect(function()
                     callback()
@@ -826,7 +825,7 @@ function SolarisLib:New(Config)
                 spawn(function()
                     while wait() do
                        Button.BackgroundColor3 = Holding and SolarisLib.Themes[SolarisLib.Settings.Theme].ButtonHold or SolarisLib.Themes[SolarisLib.Settings.Theme].Button
-                       Button.ButtonText.TextColor3 = SolarisLib.Themes[SolarisLib.Settings.Theme].TextColor
+                       Button.ButtonText.TextColor3 = Color3.fromRGB(255, 35, 55)
                     end
                 end)
 
