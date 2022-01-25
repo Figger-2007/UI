@@ -166,11 +166,12 @@ function Library:CreateWindow(Config, Parent)
 
 		Tab.Name = Name .. " T"
 		Tab.Parent = TContainer
+		Tab.BorderColor3 = Color3.fromRGB(80, 80, 80)
         
 		TabButton.Name = Name .. " TB"
 		TabButton.Parent = TBContainer
 		TabButton.Title.Text = Name
-		TabButton.BorderColor3 = Color3.fromRGB(80, 80, 80)
+		
 		TabButton.BackgroundColor3 = Config.Color
 
 		table.insert(Library.ColorTable, TabButton)
