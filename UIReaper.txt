@@ -166,9 +166,9 @@ function Library:CreateWindow(Config, Parent)
         
 		Tab.Name = Name .. " T"
 		Tab.Parent = TContainer
-        Tab.BorderColor3 = Color3.fromRGB(255, 35, 50)
-		Tab.BorderSizePixel = 1
         
+        TabButton.BorderColor3 = Color3.fromRGB(255, 35, 50)
+		TabButton.BorderSizePixel = 1
 		TabButton.Name = Name .. " TB"
 		TabButton.Parent = TBContainer
 		TabButton.Title.Text = Name
