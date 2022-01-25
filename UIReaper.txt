@@ -824,10 +824,10 @@ function SolarisLib:New(Config)
 
                 spawn(function()
                     while wait() do
-                       Button.BackgroundColor3 = Color3.fromRGB(255, 35, 50)-- Holding and SolarisLib.Themes[SolarisLib.Settings.Theme].ButtonHold or SolarisLib.Themes[SolarisLib.Settings.Theme].Button
-                       Button.ButtonText.TextColor3 = Color3.fromRGB(255, 35, 55)
+                       Button.BackgroundColor3 = Holding and SolarisLib.Themes[SolarisLib.Settings.Theme].ButtonHold or SolarisLib.Themes[SolarisLib.Settings.Theme].Button
+                       Button.ButtonText.TextColor3 = Color3.fromRGB(80, 80, 80)
                        Button.Parent.BorderColor3 = Color3.fromRGB(255, 35, 50)
-                       BorderSizePixel = 2
+                       Button.BorderSizePixel = 2
                     end
                 end)
 
