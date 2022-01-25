@@ -171,6 +171,7 @@ function Library:CreateWindow(Config, Parent)
 		TabButton.Parent = TBContainer
 		TabButton.Title.Text = Name
 		TabButton.BackgroundColor3 = Config.Color
+		TabButton.BorderColor3 = Color3.fromRGB(255, 30, 50)
 
 		table.insert(Library.ColorTable, TabButton)
 		Library.TabCount = Library.TabCount + 1
