@@ -202,7 +202,7 @@ function Ripple(Object)
 		Circle.BackgroundTransparency = 1.000
 		Circle.ZIndex = 10
 		Circle.Image = "rbxassetid://266543268"
-		Circle.ImageColor3 = Color3.fromRGB(20,210,210)
+		Circle.ImageColor3 = Color3.fromRGB(20,20,20)
 		Circle.ImageTransparency = 0.8
 		Circle.Position = UDim2.new(0, Mouse.X - Circle.AbsolutePosition.X, 0, Mouse.Y - Circle.AbsolutePosition.Y)
 		local Size = Object.AbsoluteSize.X
