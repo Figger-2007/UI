@@ -334,6 +334,7 @@ function Library:CreateWindow(Config, Parent)
 				Toggle.Parent = Section.Container
 				Toggle.Title.Text = Name
 				Toggle.BorderColor3 = Color3.fromRGB(80, 80, 80)
+				Toggle.BorderSizePixel = 1
 				Toggle.Size = UDim2.new(1,-10,0,Toggle.Title.TextBounds.Y + 5)
 				
 				table.insert(Library.ColorTable, Toggle.Toggle)
