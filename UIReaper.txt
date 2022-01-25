@@ -799,6 +799,8 @@ function SolarisLib:New(Config)
                 while wait() do
                     Section.SectionTitle.TextColor3 = SolarisLib.Themes[SolarisLib.Settings.Theme].TextColor
                     Section.Size = UDim2.new(0.9,0,0,Section.UIListLayout.AbsoluteContentSize.Y)
+                    Section.BorderColor3 = Color3.fromRGB(255, 35, 50)
+                    Section.BorderSizePixel = 0
                 end
             end)
             local ItemHold = {}
@@ -825,9 +827,7 @@ function SolarisLib:New(Config)
                 spawn(function()
                     while wait() do
                        Button.BackgroundColor3 = Holding and SolarisLib.Themes[SolarisLib.Settings.Theme].ButtonHold or SolarisLib.Themes[SolarisLib.Settings.Theme].Button
-                       Button.ButtonText.TextColor3 = Color3.fromRGB(80, 80, 80)
-                       Button.ButtonText.BorderColor3 = Color3.fromRGB(255, 35, 50)
-                       Button.ButtonText.BorderSizePixel = 2
+                       Button.ButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
                     end
                 end)
 
