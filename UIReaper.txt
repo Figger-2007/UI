@@ -253,6 +253,7 @@ function Library:CreateWindow(Config, Parent)
 				Button.Parent = Section.Container
 				Button.Title.Text = Name
 				Button.BorderColor3 = Color3.fromRGB(255, 35, 50)
+				Button.BorderSizePixel = 1
 				Button.Size = UDim2.new(1,-10,0,Button.Title.TextBounds.Y + 5)
 				table.insert(Library.ColorTable, Button)
 
