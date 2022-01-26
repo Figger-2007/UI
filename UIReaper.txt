@@ -127,18 +127,18 @@ local SolarisLib = {
             Bind = Color3.fromRGB(55,40,40)
         },
         Green = {
-            MainFrame = Color3.fromRGB(35, 50, 35),
-            TopBar = Color3.fromRGB(40, 55, 40),
+            MainFrame = Color3.fromRGB(135, 50, 35),
+            TopBar = Color3.fromRGB(140, 55, 40),
             TextColor =  Color3.fromRGB(255,255,255),
-            Menu = Color3.fromRGB(47, 62, 47),
-            TabToggled = Color3.fromRGB(53,68,53),
+            Menu = Color3.fromRGB(147, 62, 47),
+            TabToggled = Color3.fromRGB(153,68,53),
             Button = Color3.fromRGB(255,55,40),
-            ButtonHold = Color3.fromRGB(41,56,41),
-            Toggle = Color3.fromRGB(40,55,40),
-            ToggleFrame = Color3.fromRGB(65,80,65),
-            ToggleToggled = Color3.fromRGB(64, 120, 64),
-            Slider = Color3.fromRGB(40,55,40),
-            SliderBar = Color3.fromRGB(35, 50, 35),
+            ButtonHold = Color3.fromRGB(141,56,41),
+            Toggle = Color3.fromRGB(140,55,40),
+            ToggleFrame = Color3.fromRGB(165,80,65),
+            ToggleToggled = Color3.fromRGB(164, 120, 64),
+            Slider = Color3.fromRGB(140,55,40),
+            SliderBar = Color3.fromRGB(135, 50, 35),
             SliderInc = Color3.fromRGB(70, 85, 70),
             Dropdown = Color3.fromRGB(40,55,40),
             DropdownItem = Color3.fromRGB(40,55,40),
@@ -150,7 +150,7 @@ local SolarisLib = {
         }
     },
     Settings = {
-        Theme = Red,
+        Theme = "Green",
         ShowFriendsOnLaunch = false,
         ShowMusicOnLaunch = false,
         CloseBind = "RightControl"
