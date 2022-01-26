@@ -150,9 +150,9 @@ local SolarisLib = {
         }
     },
     Settings = {
-        Theme = "Red",
-        ShowFriendsOnLaunch = true,
-        ShowMusicOnLaunch = true,
+        Theme = Red,
+        ShowFriendsOnLaunch = false,
+        ShowMusicOnLaunch = false,
         CloseBind = "RightControl"
     },
     Flags = {},
