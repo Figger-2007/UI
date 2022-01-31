@@ -847,8 +847,12 @@ function SolarisLib:New(Config)
 					Toggle:Set(Toggle.Value)           
 				end)
 				if flag == true then
-                            Toggle:Set(true)
-                        end
+                    Toggle:Set(true)
+                    ToggleMain.MouseButton1Click:Connect(function()
+                        flag = false
+                        Toggle:Set(false)
+                    end)
+                end
                 spawn(function()
                     while wait() do
                         
