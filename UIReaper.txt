@@ -848,6 +848,8 @@ function SolarisLib:New(Config)
 				end)
 				if flag == true then
                     Toggle:Set(true)
+                    wait(1)
+                    flag = false
                 end
                 spawn(function()
                     while wait() do
