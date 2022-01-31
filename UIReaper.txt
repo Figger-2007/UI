@@ -846,7 +846,14 @@ function SolarisLib:New(Config)
 					Toggle.Value = not Toggle.Value
 					Toggle:Set(Toggle.Value)           
 				end)
-
+                
+                spawn(function()
+                    if flag == true then
+                        Toggle:Set(Toggle.Value)
+                    end
+                end)
+                
+                
                 spawn(function()
                     while wait() do
                         ToggleMain.ToggleFrame.ToggleToggled.BackgroundColor3 = Toggle.Value and SolarisLib.Themes[SolarisLib.Settings.Theme].ToggleToggled or SolarisLib.Themes[SolarisLib.Settings.Theme].Toggle
@@ -877,9 +884,7 @@ function SolarisLib:New(Config)
                     Slider.Value = Val
                     callback(Slider.Value)
                 end
-			    if flag == true then
-			        dragging = true
-			    end
+
 				SliderMain.SliderFrame.InputBegan:Connect(function(input) if input.UserInputType == Enum.UserInputType.MouseButton1 then dragging = true end end)
 				SliderMain.SliderFrame.InputEnded:Connect(function(input) if input.UserInputType == Enum.UserInputType.MouseButton1 then dragging = false end end)
 				game:GetService("UserInputService").InputChanged:Connect(function(input) if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then move(input) end end)
